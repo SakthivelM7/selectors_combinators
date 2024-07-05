@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors & Combinators</title>
+    <style>
+        div p{
+            color: hsl(0, 0%, 1%);
+        }
+        .div1 > p{
+            color: rgb(166, 10, 10);
+        }
+        .div2 + p{
+            color: rgb(183, 144, 3);
+
+        }
+        .div3 ~ p{
+            color: rgb(38, 137, 48);
+        }
+        a[target]{
+            background-color: rgb(62, 3, 116);
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(166, 172, 221);">
+
+    <!--Descendant Selector-->
+
+    <div style="margin-top: 10px;">
+        <h1 style="text-align: center;">Descendant Selector(space)</h1>
+        <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+            quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+        <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+            quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+        <section><p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cumque fugiat tenetur officiis harum unde minus voluptates tempore error necessitatibus, 
+            neque eos ducimus, saepe quidem quia! Quis, vel. Recusandae, cumque?</p></section>
+        <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+            quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+    </div>
+        
+    <!--Class Selector-->
+
+        <div class="div1 margin-top: 20px;">
+            <h1 style="text-align: center;">Class Selector(>)</h1>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <section><p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cumque fugiat tenetur officiis harum unde minus voluptates tempore error necessitatibus, 
+                neque eos ducimus, saepe quidem quia! Quis, vel. Recusandae, cumque?</p></section>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+        </div>
+
+        <!--Adjacent Selector-->
+
+        <div class="div2">
+            <h1 style="text-align: center;">Adjacent Selector(+)</h1>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <section><p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cumque fugiat tenetur officiis harum unde minus voluptates tempore error necessitatibus, 
+                neque eos ducimus, saepe quidem quia! Quis, vel. Recusandae, cumque?</p></section>
+        </div>
+        <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+            quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+
+        <!--General Selector-->
+
+        <div class="div3">
+            <h1 style="text-align: center;">General Selector(~)</h1>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <section><p style="margin-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cumque fugiat tenetur officiis harum unde minus voluptates tempore error necessitatibus, 
+                neque eos ducimus, saepe quidem quia! Quis, vel. Recusandae, cumque?</p></section>
+        </div>
+
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            <p style="margin-left: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima distinctio blanditiis repudiandae, 
+                quo illum corporis rerum quas qui tenetur dolorem modi et repellendus id vitae odit esse amet dolore.</p>
+            </body>
+            <div>
+                <a href="https://www.google.com/" target="_blank">google</a>
+            </div>
+        
+</html>
